@@ -1,0 +1,291 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: star
+# Configurations: Release
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Release
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/hojooneum/OpenCV_Practice/star/cmake-build-release/
+# =============================================================================
+# Object build statements for EXECUTABLE target star
+
+
+#############################################
+# Order-only phony target for star
+
+build cmake_object_order_depends_target_star: phony || CMakeFiles/star.dir
+
+build CMakeFiles/star.dir/main.cpp.o: CXX_COMPILER__star_Release /Users/hojooneum/OpenCV_Practice/star/main.cpp || cmake_object_order_depends_target_star
+  DEP_FILE = CMakeFiles/star.dir/main.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++20
+  OBJECT_DIR = CMakeFiles/star.dir
+  OBJECT_FILE_DIR = CMakeFiles/star.dir
+
+build CMakeFiles/star.dir/general.cpp.o: CXX_COMPILER__star_Release /Users/hojooneum/OpenCV_Practice/star/general.cpp || cmake_object_order_depends_target_star
+  DEP_FILE = CMakeFiles/star.dir/general.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++20
+  OBJECT_DIR = CMakeFiles/star.dir
+  OBJECT_FILE_DIR = CMakeFiles/star.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target star
+
+
+#############################################
+# Link the executable star
+
+build star: CXX_EXECUTABLE_LINKER__star_Release CMakeFiles/star.dir/main.cpp.o CMakeFiles/star.dir/general.cpp.o | /Users/hojooneum/OpenCV_Practice/star/lib/libstar_library.a
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk
+  LINK_LIBRARIES = /Users/hojooneum/OpenCV_Practice/star/lib/libstar_library.a
+  OBJECT_DIR = CMakeFiles/star.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = star
+  TARGET_PDB = star.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target star_calc
+
+
+#############################################
+# Order-only phony target for star_calc
+
+build cmake_object_order_depends_target_star_calc: phony || CMakeFiles/star_calc.dir
+
+build CMakeFiles/star_calc.dir/main.cpp.o: CXX_COMPILER__star_calc_Release /Users/hojooneum/OpenCV_Practice/star/main.cpp || cmake_object_order_depends_target_star_calc
+  DEP_FILE = CMakeFiles/star_calc.dir/main.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/hojooneum/OpenCV_Practice/star/includes/math -I/Users/hojooneum/OpenCV_Practice/star/includes/general
+  OBJECT_DIR = CMakeFiles/star_calc.dir
+  OBJECT_FILE_DIR = CMakeFiles/star_calc.dir
+
+build CMakeFiles/star_calc.dir/calc.cpp.o: CXX_COMPILER__star_calc_Release /Users/hojooneum/OpenCV_Practice/star/calc.cpp || cmake_object_order_depends_target_star_calc
+  DEP_FILE = CMakeFiles/star_calc.dir/calc.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/hojooneum/OpenCV_Practice/star/includes/math -I/Users/hojooneum/OpenCV_Practice/star/includes/general
+  OBJECT_DIR = CMakeFiles/star_calc.dir
+  OBJECT_FILE_DIR = CMakeFiles/star_calc.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target star_calc
+
+
+#############################################
+# Link the executable star_calc
+
+build star_calc: CXX_EXECUTABLE_LINKER__star_calc_Release CMakeFiles/star_calc.dir/main.cpp.o CMakeFiles/star_calc.dir/calc.cpp.o
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk
+  OBJECT_DIR = CMakeFiles/star_calc.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = star_calc
+  TARGET_PDB = star_calc.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target calc_library
+
+
+#############################################
+# Order-only phony target for calc_library
+
+build cmake_object_order_depends_target_calc_library: phony || CMakeFiles/calc_library.dir
+
+build CMakeFiles/calc_library.dir/calc.cpp.o: CXX_COMPILER__calc_library_Release /Users/hojooneum/OpenCV_Practice/star/calc.cpp || cmake_object_order_depends_target_calc_library
+  DEP_FILE = CMakeFiles/calc_library.dir/calc.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/hojooneum/OpenCV_Practice/star/includes/math
+  OBJECT_DIR = CMakeFiles/calc_library.dir
+  OBJECT_FILE_DIR = CMakeFiles/calc_library.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target calc_library
+
+
+#############################################
+# Link the static library libcalc_library.a
+
+build libcalc_library.a: CXX_STATIC_LIBRARY_LINKER__calc_library_Release CMakeFiles/calc_library.dir/calc.cpp.o
+  ARCH_FLAGS = -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk
+  LANGUAGE_COMPILE_FLAGS = -O3 -DNDEBUG
+  OBJECT_DIR = CMakeFiles/calc_library.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = libcalc_library.a
+  TARGET_PDB = calc_library.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/hojooneum/OpenCV_Practice/star/cmake-build-release && "/Users/hojooneum/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/hojooneum/OpenCV_Practice/star/cmake-build-release && "/Users/hojooneum/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/bin/cmake" --regenerate-during-build -S/Users/hojooneum/OpenCV_Practice/star -B/Users/hojooneum/OpenCV_Practice/star/cmake-build-release
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/hojooneum/OpenCV_Practice/star/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target calc_test_boost
+
+
+#############################################
+# Order-only phony target for calc_test_boost
+
+build cmake_object_order_depends_target_calc_test_boost: phony || cmake_object_order_depends_target_calc_library
+
+build tests/CMakeFiles/calc_test_boost.dir/test.cpp.o: CXX_COMPILER__calc_test_boost_Release /Users/hojooneum/OpenCV_Practice/star/tests/test.cpp || cmake_object_order_depends_target_calc_test_boost
+  DEFINES = -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_NO_LIB
+  DEP_FILE = tests/CMakeFiles/calc_test_boost.dir/test.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/hojooneum/OpenCV_Practice/star/includes/math -isystem /opt/homebrew/include
+  OBJECT_DIR = tests/CMakeFiles/calc_test_boost.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/calc_test_boost.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target calc_test_boost
+
+
+#############################################
+# Link the executable tests/calc_test_boost
+
+build tests/calc_test_boost: CXX_EXECUTABLE_LINKER__calc_test_boost_Release tests/CMakeFiles/calc_test_boost.dir/test.cpp.o | /opt/homebrew/lib/libboost_unit_test_framework-mt.dylib libcalc_library.a || libcalc_library.a
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk
+  LINK_LIBRARIES = /opt/homebrew/lib/libboost_unit_test_framework-mt.dylib  libcalc_library.a
+  OBJECT_DIR = tests/CMakeFiles/calc_test_boost.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = tests/calc_test_boost
+  TARGET_PDB = calc_test_boost.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build tests/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/hojooneum/OpenCV_Practice/star/cmake-build-release/tests && "/Users/hojooneum/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build tests/edit_cache: phony tests/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build tests/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/hojooneum/OpenCV_Practice/star/cmake-build-release/tests && "/Users/hojooneum/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/bin/cmake" --regenerate-during-build -S/Users/hojooneum/OpenCV_Practice/star -B/Users/hojooneum/OpenCV_Practice/star/cmake-build-release
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build tests/rebuild_cache: phony tests/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Target aliases.
+
+build calc_library: phony libcalc_library.a
+
+build calc_test_boost: phony tests/calc_test_boost
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/hojooneum/OpenCV_Practice/star/cmake-build-release
+
+build all: phony star star_calc libcalc_library.a tests/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/hojooneum/OpenCV_Practice/star/cmake-build-release/tests
+
+build tests/all: phony tests/calc_test_boost
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCInformation.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-CXX.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindBoost.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindPackageMessage.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-CXX.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-CXX.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /Users/hojooneum/OpenCV_Practice/star/CMakeLists.txt /Users/hojooneum/OpenCV_Practice/star/tests/CMakeLists.txt /opt/homebrew/lib/cmake/Boost-1.81.0/BoostConfig.cmake /opt/homebrew/lib/cmake/Boost-1.81.0/BoostConfigVersion.cmake /opt/homebrew/lib/cmake/BoostDetectToolset-1.81.0.cmake /opt/homebrew/lib/cmake/boost_headers-1.81.0/boost_headers-config-version.cmake /opt/homebrew/lib/cmake/boost_headers-1.81.0/boost_headers-config.cmake /opt/homebrew/lib/cmake/boost_unit_test_framework-1.81.0/boost_unit_test_framework-config-version.cmake /opt/homebrew/lib/cmake/boost_unit_test_framework-1.81.0/boost_unit_test_framework-config.cmake /opt/homebrew/lib/cmake/boost_unit_test_framework-1.81.0/libboost_unit_test_framework-variant-mt-shared.cmake /opt/homebrew/lib/cmake/boost_unit_test_framework-1.81.0/libboost_unit_test_framework-variant-mt-static.cmake /opt/homebrew/lib/cmake/boost_unit_test_framework-1.81.0/libboost_unit_test_framework-variant-shared.cmake /opt/homebrew/lib/cmake/boost_unit_test_framework-1.81.0/libboost_unit_test_framework-variant-static.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCInformation.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-CXX.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindBoost.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindPackageMessage.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-CXX.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-CXX.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Users/hojooneum/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /Users/hojooneum/OpenCV_Practice/star/CMakeLists.txt /Users/hojooneum/OpenCV_Practice/star/tests/CMakeLists.txt /opt/homebrew/lib/cmake/Boost-1.81.0/BoostConfig.cmake /opt/homebrew/lib/cmake/Boost-1.81.0/BoostConfigVersion.cmake /opt/homebrew/lib/cmake/BoostDetectToolset-1.81.0.cmake /opt/homebrew/lib/cmake/boost_headers-1.81.0/boost_headers-config-version.cmake /opt/homebrew/lib/cmake/boost_headers-1.81.0/boost_headers-config.cmake /opt/homebrew/lib/cmake/boost_unit_test_framework-1.81.0/boost_unit_test_framework-config-version.cmake /opt/homebrew/lib/cmake/boost_unit_test_framework-1.81.0/boost_unit_test_framework-config.cmake /opt/homebrew/lib/cmake/boost_unit_test_framework-1.81.0/libboost_unit_test_framework-variant-mt-shared.cmake /opt/homebrew/lib/cmake/boost_unit_test_framework-1.81.0/libboost_unit_test_framework-variant-mt-static.cmake /opt/homebrew/lib/cmake/boost_unit_test_framework-1.81.0/libboost_unit_test_framework-variant-shared.cmake /opt/homebrew/lib/cmake/boost_unit_test_framework-1.81.0/libboost_unit_test_framework-variant-static.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all
