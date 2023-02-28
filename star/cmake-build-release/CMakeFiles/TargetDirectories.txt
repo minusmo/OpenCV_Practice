@@ -1,0 +1,8 @@
+/Users/hojooneum/OpenCV_Practice/star/cmake-build-release/CMakeFiles/star.dir
+/Users/hojooneum/OpenCV_Practice/star/cmake-build-release/CMakeFiles/star_calc.dir
+/Users/hojooneum/OpenCV_Practice/star/cmake-build-release/CMakeFiles/calc_library.dir
+/Users/hojooneum/OpenCV_Practice/star/cmake-build-release/CMakeFiles/edit_cache.dir
+/Users/hojooneum/OpenCV_Practice/star/cmake-build-release/CMakeFiles/rebuild_cache.dir
+/Users/hojooneum/OpenCV_Practice/star/cmake-build-release/tests/CMakeFiles/calc_test_boost.dir
+/Users/hojooneum/OpenCV_Practice/star/cmake-build-release/tests/CMakeFiles/edit_cache.dir
+/Users/hojooneum/OpenCV_Practice/star/cmake-build-release/tests/CMakeFiles/rebuild_cache.dir

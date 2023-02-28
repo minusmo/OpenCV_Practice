@@ -1,0 +1,106 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.24"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						3
+					]
+				},
+				{
+					"build" : "tests",
+					"jsonFile" : "directory-tests-Debug-b01f6abb0ab61427ef3b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.24"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "tests",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "star",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "calc_library::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-calc_library-Debug-6f15d04c5e2745d84eb6.json",
+					"name" : "calc_library",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "calc_test_boost::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-calc_test_boost-Debug-1bc00f62c1c0507ac098.json",
+					"name" : "calc_test_boost",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "star::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-star-Debug-1b05fec16f8e83c186ec.json",
+					"name" : "star",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "star_calc::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-star_calc-Debug-1af5ee8a3c584276c003.json",
+					"name" : "star_calc",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/hojooneum/OpenCV_Practice/star/cmake-build-debug",
+		"source" : "/Users/hojooneum/OpenCV_Practice/star"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

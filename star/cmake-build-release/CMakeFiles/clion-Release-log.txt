@@ -1,0 +1,4 @@
+"/Users/hojooneum/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Release "-DCMAKE_MAKE_PROGRAM=/Users/hojooneum/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/ninja/mac/ninja" -G Ninja -S /Users/hojooneum/OpenCV_Practice/star -B /Users/hojooneum/OpenCV_Practice/star/cmake-build-release
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/hojooneum/OpenCV_Practice/star/cmake-build-release
