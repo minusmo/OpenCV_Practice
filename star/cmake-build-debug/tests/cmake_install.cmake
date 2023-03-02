@@ -1,4 +1,4 @@
-# Install script for directory: /Users/hojooneum/OpenCV_Practice/star/tests
+# Install script for directory: /Users/hojooneum/OpenGL_Practice/star/tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

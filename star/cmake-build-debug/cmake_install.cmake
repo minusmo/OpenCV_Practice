@@ -1,4 +1,4 @@
-# Install script for directory: /Users/hojooneum/OpenCV_Practice/star
+# Install script for directory: /Users/hojooneum/OpenGL_Practice/star
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/hojooneum/OpenCV_Practice/star/cmake-build-debug/tests/cmake_install.cmake")
+  include("/Users/hojooneum/OpenGL_Practice/star/cmake-build-debug/tests/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/hojooneum/OpenCV_Practice/star/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/hojooneum/OpenGL_Practice/star/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

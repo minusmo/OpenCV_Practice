@@ -1,7 +1,6 @@
 # ninja log v5
 0	70	1677581060123223243	CMakeFiles/star.dir/general.cpp.o	23b39f3d5d538601
 579	633	1677582913577338506	star_calc	c4f2137523859b84
-0	62	1677584279450339942	CMakeFiles/star_library.dir/calc.cpp.o	3f076d147fc28c99
 0	394	1677581060447533980	CMakeFiles/star.dir/main.cpp.o	7811fb15a951ebfb
 394	443	1677581060498898029	star	b561c164fbc62dfe
 1	579	1677582913521401902	CMakeFiles/star_calc.dir/main.cpp.o	b0f6eef24a706a2a
@@ -9,3 +8,7 @@
 2	214	1677582913156254692	CMakeFiles/star_calc.dir/calc.cpp.o	1be2e66cbb2e3c6f
 1	199	1677587151140988851	tests/CMakeFiles/calc_test_boost.dir/test.cpp.o	c67d9b36ab77cd67
 0	221	1677587151164988334	CMakeFiles/calc_library.dir/calc.cpp.o	c3ff3fa4bbeba26f
+0	109	1677687472234346877	CMakeFiles/calc_library.dir/calc.cpp.o	a95064574f3d897a
+109	177	1677687472303812000	libcalc_library.a	76a6182db9db5a40
+1	585	1677687472708339581	tests/CMakeFiles/calc_test_boost.dir/test.cpp.o	3b92b4c1b6971a27
+586	639	1677687472764951728	tests/calc_test_boost	1acfe39020abe808
