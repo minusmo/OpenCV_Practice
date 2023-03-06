@@ -10,6 +10,7 @@ BOOST_AUTO_TEST_SUITE(calc_testsuite)
 
 BOOST_AUTO_TEST_CASE(addvalues_zero)
     {
-        BOOST_CHECK_EQUAL(add_values(1,4),5);
-        BOOST_CHECK_EQUAL(add_values(2,3),5);
+        BOOST_CHECK_EQUAL (add_values(1,4),5);
+        BOOST_CHECK_EQUAL (add_values(2,3),5);
     }
+}
