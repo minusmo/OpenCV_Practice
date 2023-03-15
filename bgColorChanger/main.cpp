@@ -7,6 +7,8 @@ const unsigned int WINDOW_HEIGHT = 300;
 
 // this is a callback for resize openGL rendering
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
+void processInput(GLFWwindow* window);
+float* getRandomColor();
 
 int main() {
     // initialize libraries
@@ -29,6 +31,12 @@ int main() {
     if (!gladLoadGLLoader((GLADloadproc) glfwGetProcAddress)) { printf("glad load GL loader failed"); return -1; }
 
     while (!glfwWindowShouldClose(window)) {
+        processInput(window);
+
+        float* randomColor = getRandomColor();
+        glClearColor(randomColor[0], randomColor[1], randomColor[2], randomColor[3]);
+        glClear(GL_COLOR_BUFFER_BIT);
+
         glfwSwapBuffers(window);
         glfwPollEvents();
     }
@@ -39,4 +47,14 @@ int main() {
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height) {
     glViewport(0, 0, width, height);
+}
+
+void processInput(GLFWwindow* window) {
+    if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS) { glfwSetWindowShouldClose(window, true); }
+}
+
+float* getRandomColor() {
+    float randomColors[4] = {0.0f, 0.0f, 0.0f, 0.0f};
+    for (int i=0;i<4;i++) { randomColors[i] = (float)(rand() % 10) / 10; }
+    return randomColors;
 }
